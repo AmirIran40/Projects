@@ -83,7 +83,51 @@
                 </form>
             </section>
         </article>
+
+        <div>
         
+           <style>
+        p{
+            color: black;
+            font-size: 14px;
+        }
+           </style>
+         <section class="container">
+        <h1>Sign up form</h1>
+        <div class="error">
+            <p><?php echo $error['total'];  ?></p>
+        </div>
+        <form action="#" method="post">
+            <label for="user">
+                <div class="error">
+                    <p><?php echo $error['user'];  ?></p>
+                </div>
+                <input type="text" name="user" placeholder="Username:"> <br>
+            </label>
+            <label for="pass1">
+                <div class="error">
+                    <p><?php echo $error['pass1'];  ?></p>
+                </div>
+                <input type="password" name="pass1" placeholder="Password:"> <br>
+            </label>
+            <label for="pass2">
+                <div class="error">
+                    <p><?php echo $error['pass2'];  ?></p>
+                </div>
+                <input type="password" name="pass2" placeholder="Confirm Password:"> <br>
+            </label>
+            <label for="email">
+                <div class="error">
+                    <p><?php echo $error['email'];  ?></p>
+                </div>
+                <input type="email" name="email" placeholder="Email:"> <br>
+            </label>
+            <label for="submit">
+                <input type="submit" name="submit" value="Signup"> <br>
+            </label>
+        </form>
+    </section>
+    </div>
         <footer>
             <p>Copyright&Copy Amircopy</p>
             <ul>
